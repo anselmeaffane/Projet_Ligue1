@@ -1,0 +1,117 @@
+body {
+    background-color: #fff;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sous-zone {
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: "Fredoka One", cursive;
+    font-size: 24px;
+    color: #333;
+}
+
+h2 {
+    font-family: "Fredoka One", cursive;
+    font-size: 18px;
+    color: #666;
+}
+
+p {
+    font-size: 16px;
+    color: #999;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+.container {
+    background-image: url('background_image.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.logo-ligue1 {
+    width: 100px;
+}
+
+.team-logos {
+    margin-top: 10px;
+}
+
+.team-logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.match-score {
+    font-size: 24px;
+}
+
+.match-duration {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+}
+
+.trophy-count {
+    font-size: 18px;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.center-logo {
+    margin-top: auto;
+}
+
+.center-logo img {
+    width: 100px;
+}
+
+/* Animation du ballon */
+.animate-ballon {
+    animation: ballon-bounce 0.5s;
+    transform-origin: bottom center;
+}
+
+@keyframes ballon-bounce {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-10px) scale(1.2);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
